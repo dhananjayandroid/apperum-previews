@@ -1,34 +1,955 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Concept Previews — AppRerum</title><style>
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;margin:0;padding:60px 20px}
-h1{letter-spacing:-.02em} .sub{color:#94a3b8;margin-bottom:36px}
-.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;max-width:1000px}
-.c{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:18px;text-decoration:none;color:#e2e8f0;display:flex;flex-direction:column;gap:4px;transition:.15s}
-.c:hover{border-color:#38bdf8;transform:translateY(-2px)}
-.c span{color:#94a3b8;font-size:.88rem}
-footer{margin-top:44px;color:#64748b;font-size:.85rem} a{color:#38bdf8}
-</style></head><body>
-<h1>AppRerum — Concept Site Previews</h1>
-<p class="sub">Unaffiliated demo concepts built free for local businesses. <a href="https://apprerum.com">apprerum.com</a></p>
-<div class="g">
-<a class="c" href="/apperum-previews/sites/bark-in-style-grooming/"><b>Bark In Style Grooming</b><span>Hastings</span></a>
-<a class="c" href="/apperum-previews/sites/boobos-grooming-salon/"><b>BooBoo's Grooming Salon</b><span>Darch</span></a>
-<a class="c" href="/apperum-previews/sites/brisbane-autoshop/"><b>Brisbane Autoshop</b><span>Eight Mile Plains (Brisbane)</span></a>
-<a class="c" href="/apperum-previews/sites/capital-auto-car-removals/"><b>Capital Auto Car Removals</b><span>Fyshwick (Canberra-wide)</span></a>
-<a class="c" href="/apperum-previews/sites/crackin-dog-grooming/"><b>Crackin Dog Grooming</b><span>Ascot Vale (Melbourne)</span></a>
-<a class="c" href="/apperum-previews/sites/dazzlin-doggie/"><b>Dazzlin Doggie</b><span>Brown Hill (Ballarat)</span></a>
-<a class="c" href="/apperum-previews/sites/debonair-k9s/"><b>Debonair k9s</b><span>Donvale (Melbourne)</span></a>
-<a class="c" href="/apperum-previews/sites/double-plush-grooming/"><b>Double Plush Grooming</b><span>Eltham (Melbourne NE fringe)</span></a>
-<a class="c" href="/apperum-previews/sites/grooming-with-shelley/"><b>Grooming with Shelley</b><span>Albert Park</span></a>
-<a class="c" href="/apperum-previews/sites/just-dogs-grooming/"><b>Just Dogs Grooming</b><span>Rokeby</span></a>
-<a class="c" href="/apperum-previews/sites/paulas-pampered-pooches/"><b>Paula's Pampered Pooches</b><span>Croydon (Melbourne east fringe)</span></a>
-<a class="c" href="/apperum-previews/sites/pawfection-pet-service/"><b>Pawfection Pet Service</b><span>Cooya Beach</span></a>
-<a class="c" href="/apperum-previews/sites/paws2wash-dog-grooming/"><b>Paws2wash Dog Grooming</b><span>Valley View</span></a>
-<a class="c" href="/apperum-previews/sites/platinum-dog-grooming/"><b>Platinum Dog Grooming</b><span>Bannockburn (Geelong fringe)</span></a>
-<a class="c" href="/apperum-previews/sites/precious-paws-dog-grooming-orange/"><b>Precious Paws Dog Grooming Orange</b><span>Orange</span></a>
-<a class="c" href="/apperum-previews/sites/studio-50-paw/"><b>Studio 50 Paw</b><span>Essendon (Melbourne)</span></a>
-<a class="c" href="/apperum-previews/sites/stylin-dogs/"><b>Stylin' Dogs</b><span>Belmont (Geelong)</span></a>
-<a class="c" href="/apperum-previews/sites/woof-hoof-on-brobenah/"><b>Woof & Hoof on Brobenah</b><span>Leeton</span></a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AppRerum Concept Previews — Bespoke Local Business Demos</title>
+  <meta name="description" content="High-converting bespoke concept websites crafted by AppRerum for standout local Australian businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --card-border: #1f293d;
+      --card-hover-border: #38bdf8;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-glow: rgba(56, 189, 248, 0.15);
+      --accent: #10b981;
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.5;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 65%, rgba(124, 58, 237, 0.08) 0%, transparent 45%);
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 999px;
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .brand-pill .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 36px;
+    }
+
+    .subtitle a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .subtitle a:hover {
+      text-decoration: underline;
+    }
+
+    /* Controls Bar */
+    .controls {
+      background: rgba(17, 24, 39, 0.8);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      margin-bottom: 36px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .search-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .search-box {
+      position: relative;
+      flex: 1;
+    }
+
+    .search-box svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      stroke: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      background: #090d16;
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter-btn {
+      background: #1e293b;
+      color: var(--text-muted);
+      border: 1px solid transparent;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .filter-btn:hover {
+      background: #334155;
+      color: #fff;
+    }
+
+    .filter-btn.active {
+      background: var(--primary);
+      color: #090d16;
+      font-weight: 700;
+    }
+
+    .results-count {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+
+    /* Card */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--card-hover-border);
+      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.5), 0 0 20px var(--primary-glow);
+    }
+
+    .card-thumb {
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      border-bottom: 1px solid var(--card-border);
+      background-color: #1e293b;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover .card-thumb {
+      transform: scale(1.02);
+    }
+
+    .card-badges {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .cat-badge {
+      background: rgba(9, 13, 22, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+
+    .state-badge {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .card-body {
+      padding: 22px 20px 18px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-location {
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .card-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .card-tag {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #cbd5e1;
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .card-footer {
+      border-top: 1px solid var(--card-border);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--primary);
+      font-size: 0.88rem;
+      font-weight: 700;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .card-footer svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover .card-footer svg {
+      transform: translateX(4px);
+    }
+
+    /* Empty state */
+    .empty-state {
+      display: none;
+      text-align: center;
+      padding: 60px 20px;
+      grid-column: 1 / -1;
+    }
+    .empty-state.visible {
+      display: block;
+    }
+    .empty-state h3 {
+      font-size: 1.3rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .empty-state p {
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 64px;
+      color: #64748b;
+      font-size: 0.85rem;
+      border-top: 1px solid var(--card-border);
+      padding-top: 32px;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .filter-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="brand-pill">
+      <span class="dot"></span>
+      <span>AppRerum Concept Demonstrations</span>
+    </div>
+    <h1>Bespoke Concept Previews</h1>
+    <p class="subtitle">
+      Explore high-converting, mobile-first concept previews built for standout Australian local businesses by <a href="https://apprerum.com" target="_blank" rel="noopener">AppRerum</a>.
+    </p>
+  </header>
+
+  <!-- Controls -->
+  <div class="controls">
+    <div class="search-row">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" placeholder="Search by business name, suburb, or state (e.g. Melbourne, Perth, Canberra, Ballarat)...">
+      </div>
+    </div>
+    <div class="filter-row">
+      <div class="filter-group" id="categoryFilters">
+        <button class="filter-btn active" data-cat="all">All Previews (19)</button>
+        <button class="filter-btn" data-cat="grooming">Dog Grooming (17)</button>
+        <button class="filter-btn" data-cat="auto">Automotive (2)</button>
+      </div>
+      <div class="results-count" id="resultsCount">Showing 19 of 19 previews</div>
+    </div>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="grid" id="cardGrid">
+    
+    <!-- Bark In Style Grooming -->
+    <a class="card" href="./sites/bark-in-style-grooming/" data-name="Bark In Style Grooming" data-cat="grooming" data-state="WA" data-suburb="Secret Harbour">
+      <div class="card-thumb" style="background-image: url('./sites/bark-in-style-grooming/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Coastal Salon</span>
+          <span class="state-badge">WA</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Secret Harbour, WA</div>
+        <div class="card-title">Bark In Style Grooming</div>
+        <p class="card-desc">Boutique gentle 1-on-1 dog grooming, cooling summer clips, beach hydrobaths, and puppy care in Secret Harbour.</p>
+        <div class="card-tags">
+          <span class="card-tag">1-on-1 Care</span>
+          <span class="card-tag">Beach Hydrobath</span>
+          <span class="card-tag">Puppy Gentle</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- BooBoo's Grooming Salon -->
+    <a class="card" href="./sites/boobos-grooming-salon/" data-name="BooBoo's Grooming Salon" data-cat="grooming" data-state="WA" data-suburb="Darch">
+      <div class="card-thumb" style="background-image: url('./sites/boobos-grooming-salon/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Asian Fusion Styling</span>
+          <span class="state-badge">WA</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Darch, WA</div>
+        <div class="card-title">BooBoo's Grooming Salon</div>
+        <p class="card-desc">Specialized 1-on-1 boutique dog grooming, modern Asian-fusion scissoring, and luxury hydrobath spa treatments in Darch.</p>
+        <div class="card-tags">
+          <span class="card-tag">Asian Fusion</span>
+          <span class="card-tag">Cage-Free</span>
+          <span class="card-tag">Spa Hydrobath</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Brisbane Autoshop -->
+    <a class="card" href="./sites/brisbane-autoshop/" data-name="Brisbane Autoshop" data-cat="auto" data-state="QLD" data-suburb="Eight Mile Plains">
+      <div class="card-thumb" style="background-image: url('./sites/brisbane-autoshop/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Logbook Certified</span>
+          <span class="state-badge">QLD</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Eight Mile Plains, QLD</div>
+        <div class="card-title">Brisbane Autoshop</div>
+        <p class="card-desc">Complete logbook servicing, computer engine diagnostics, brake & suspension repairs, and safety certificates in Brisbane Southside.</p>
+        <div class="card-tags">
+          <span class="card-tag">Logbook Service</span>
+          <span class="card-tag">Diagnostics</span>
+          <span class="card-tag">Safety Certs</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Capital Auto Car Removals -->
+    <a class="card" href="./sites/capital-auto-car-removals/" data-name="Capital Auto Car Removals" data-cat="auto" data-state="ACT" data-suburb="Fyshwick (Canberra-wide)">
+      <div class="card-thumb" style="background-image: url('./sites/capital-auto-car-removals/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Instant Cash Up to $9,999</span>
+          <span class="state-badge">ACT</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Fyshwick (Canberra-wide), ACT</div>
+        <div class="card-title">Capital Auto Car Removals</div>
+        <p class="card-desc">Instant top-dollar cash for unwanted, scrap, damaged, and old cars with 100% free same-day towing across Canberra and ACT.</p>
+        <div class="card-tags">
+          <span class="card-tag">Top Cash</span>
+          <span class="card-tag">Free Towing</span>
+          <span class="card-tag">Same Day</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Crackin Dog Grooming -->
+    <a class="card" href="./sites/crackin-dog-grooming/" data-name="Crackin Dog Grooming" data-cat="grooming" data-state="VIC" data-suburb="Ascot Vale">
+      <div class="card-thumb" style="background-image: url('./sites/crackin-dog-grooming/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Inner-North Boutique</span>
+          <span class="state-badge">VIC</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Ascot Vale, VIC</div>
+        <div class="card-title">Crackin Dog Grooming</div>
+        <p class="card-desc">Boutique 1-on-1 dog grooming, precision breed scissor styling, warm hydrobaths, and de-shedding in inner-north Melbourne.</p>
+        <div class="card-tags">
+          <span class="card-tag">1-on-1 Care</span>
+          <span class="card-tag">Master Scissoring</span>
+          <span class="card-tag">Warm Hydrobath</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Dazzlin Doggie -->
+    <a class="card" href="./sites/dazzlin-doggie/" data-name="Dazzlin Doggie" data-cat="grooming" data-state="VIC" data-suburb="Brown Hill (Ballarat)">
+      <div class="card-thumb" style="background-image: url('./sites/dazzlin-doggie/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Country Hydrobath</span>
+          <span class="state-badge">VIC</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Brown Hill (Ballarat), VIC</div>
+        <div class="card-title">Dazzlin Doggie</div>
+        <p class="card-desc">Brown Hill’s favorite dog grooming haven. Warm therapeutic hydrobaths, paddock mud removal, deshedding, and breed clips.</p>
+        <div class="card-tags">
+          <span class="card-tag">Mud Removal</span>
+          <span class="card-tag">Winter Tidy</span>
+          <span class="card-tag">All Breeds</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Debonair k9s -->
+    <a class="card" href="./sites/debonair-k9s/" data-name="Debonair k9s" data-cat="grooming" data-state="VIC" data-suburb="Donvale">
+      <div class="card-thumb" style="background-image: url('./sites/debonair-k9s/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Debonair Styling</span>
+          <span class="state-badge">VIC</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Donvale, VIC</div>
+        <div class="card-title">Debonair k9s</div>
+        <p class="card-desc">Quiet, cage-free boutique grooming with expert artisan scissor styling, warm soothing hydrobaths, and gentle handling in leafy Donvale.</p>
+        <div class="card-tags">
+          <span class="card-tag">Artisan Scissor</span>
+          <span class="card-tag">Cage-Free</span>
+          <span class="card-tag">Aromatherapy</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Double Plush Grooming -->
+    <a class="card" href="./sites/double-plush-grooming/" data-name="Double Plush Grooming" data-cat="grooming" data-state="VIC" data-suburb="Eltham">
+      <div class="card-thumb" style="background-image: url('./sites/double-plush-grooming/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Double-Coat Specialist</span>
+          <span class="state-badge">VIC</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Eltham, VIC</div>
+        <div class="card-title">Double Plush Grooming</div>
+        <p class="card-desc">Specialist undercoat removal for double-coated breeds and plush teddy bear scissor styling for fleece coats in leafy Eltham.</p>
+        <div class="card-tags">
+          <span class="card-tag">Double-Coat Deshed</span>
+          <span class="card-tag">Teddy Styling</span>
+          <span class="card-tag">Silk Treatment</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Grooming with Shelley -->
+    <a class="card" href="./sites/grooming-with-shelley/" data-name="Grooming with Shelley" data-cat="grooming" data-state="SA" data-suburb="Albert Park">
+      <div class="card-thumb" style="background-image: url('./sites/grooming-with-shelley/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">1-on-1 Sanctuary</span>
+          <span class="state-badge">SA</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Albert Park, SA</div>
+        <div class="card-title">Grooming with Shelley</div>
+        <p class="card-desc">Gentle, unhurried boutique dog grooming in Albert Park. Specializing in calming 1-on-1 care, de-shedding, and breed scissor styling.</p>
+        <div class="card-tags">
+          <span class="card-tag">1-on-1 Sanctuary</span>
+          <span class="card-tag">Calm Handling</span>
+          <span class="card-tag">De-Shedding</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Just Dogs Grooming -->
+    <a class="card" href="./sites/just-dogs-grooming/" data-name="Just Dogs Grooming" data-cat="grooming" data-state="TAS" data-suburb="Rokeby (Hobart)">
+      <div class="card-thumb" style="background-image: url('./sites/just-dogs-grooming/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Big Dog & Deshed Specialist</span>
+          <span class="state-badge">TAS</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Rokeby (Hobart), TAS</div>
+        <div class="card-title">Just Dogs Grooming</div>
+        <p class="card-desc">Hobart’s trusted salon for all dog sizes, giant breeds, double-coat blowouts, and warm hydrobaths on the Eastern Shore.</p>
+        <div class="card-tags">
+          <span class="card-tag">Big Dog Friendly</span>
+          <span class="card-tag">Undercoat Blast</span>
+          <span class="card-tag">Warm Hydrobath</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Paula's Pampered Pooches -->
+    <a class="card" href="./sites/paulas-pampered-pooches/" data-name="Paula's Pampered Pooches" data-cat="grooming" data-state="VIC" data-suburb="Croydon">
+      <div class="card-thumb" style="background-image: url('./sites/paulas-pampered-pooches/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Loving 1-on-1 Care</span>
+          <span class="state-badge">VIC</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Croydon, VIC</div>
+        <div class="card-title">Paula's Pampered Pooches</div>
+        <p class="card-desc">Every pet is pampered like royalty. Calm, gentle 1-on-1 grooming specialized for anxious pups, senior dogs, and fluffy companions in Croydon.</p>
+        <div class="card-tags">
+          <span class="card-tag">Anxious Dog Care</span>
+          <span class="card-tag">Senior Specialists</span>
+          <span class="card-tag">Cage-Free</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Pawfection Pet Service -->
+    <a class="card" href="./sites/pawfection-pet-service/" data-name="Pawfection Pet Service" data-cat="grooming" data-state="QLD" data-suburb="Cooya Beach">
+      <div class="card-thumb" style="background-image: url('./sites/pawfection-pet-service/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Tropical Coast Care</span>
+          <span class="state-badge">QLD</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Cooya Beach, QLD</div>
+        <div class="card-title">Pawfection Pet Service</div>
+        <p class="card-desc">Tranquil home-based boutique grooming in Cooya Beach. Tropical summer clips, post-beach de-sand hydrobaths, and gentle care.</p>
+        <div class="card-tags">
+          <span class="card-tag">Tropical Clip</span>
+          <span class="card-tag">De-Sand Hydrobath</span>
+          <span class="card-tag">Port Douglas Area</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Paws2wash Dog Grooming -->
+    <a class="card" href="./sites/paws2wash-dog-grooming/" data-name="Paws2wash Dog Grooming" data-cat="grooming" data-state="SA" data-suburb="Valley View">
+      <div class="card-thumb" style="background-image: url('./sites/paws2wash-dog-grooming/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Hydrobath Spa</span>
+          <span class="state-badge">SA</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Valley View, SA</div>
+        <div class="card-title">Paws2wash Dog Grooming</div>
+        <p class="card-desc">Gentle 1-on-1 pampering with Lauren in Valley View. Warm hydrobaths, stylish breed clips, and patient handling for all sizes.</p>
+        <div class="card-tags">
+          <span class="card-tag">1-on-1 Gentle</span>
+          <span class="card-tag">Warm Hydrobath</span>
+          <span class="card-tag">Custom Styling</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Platinum Dog Grooming -->
+    <a class="card" href="./sites/platinum-dog-grooming/" data-name="Platinum Dog Grooming" data-cat="grooming" data-state="VIC" data-suburb="Bannockburn">
+      <div class="card-thumb" style="background-image: url('./sites/platinum-dog-grooming/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Platinum Standard</span>
+          <span class="state-badge">VIC</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Bannockburn, VIC</div>
+        <div class="card-title">Platinum Dog Grooming</div>
+        <p class="card-desc">Premier pet care in the Golden Plains Shire. Precision breed clips, country mud flushes, grass-seed checks, and deshedding.</p>
+        <div class="card-tags">
+          <span class="card-tag">Platinum Standard</span>
+          <span class="card-tag">Country Care</span>
+          <span class="card-tag">Breed Styling</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Precious Paws Dog Grooming Orange -->
+    <a class="card" href="./sites/precious-paws-dog-grooming-orange/" data-name="Precious Paws Dog Grooming Orange" data-cat="grooming" data-state="NSW" data-suburb="Orange">
+      <div class="card-thumb" style="background-image: url('./sites/precious-paws-dog-grooming-orange/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Central West Care</span>
+          <span class="state-badge">NSW</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Orange, NSW</div>
+        <div class="card-title">Precious Paws Dog Grooming Orange</div>
+        <p class="card-desc">Friendly local grooming on Gorman Road serving Orange and district dogs with loving attention, burr removal, and country warmth.</p>
+        <div class="card-tags">
+          <span class="card-tag">Gorman Road</span>
+          <span class="card-tag">Mud & Burr Wash</span>
+          <span class="card-tag">All Breeds</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Studio 50 Paw -->
+    <a class="card" href="./sites/studio-50-paw/" data-name="Studio 50 Paw" data-cat="grooming" data-state="VIC" data-suburb="Essendon">
+      <div class="card-thumb" style="background-image: url('./sites/studio-50-paw/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Modern Pet Studio</span>
+          <span class="state-badge">VIC</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Essendon, VIC</div>
+        <div class="card-title">Studio 50 Paw</div>
+        <p class="card-desc">Essendon’s premier pet styling studio. Modern Asian-fusion styling, teddy bear scissor work, luxury hydrobath spa treatments, and boutique care.</p>
+        <div class="card-tags">
+          <span class="card-tag">Asian Fusion</span>
+          <span class="card-tag">Luxury Spa</span>
+          <span class="card-tag">Moonee Valley</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Stylin' Dogs -->
+    <a class="card" href="./sites/stylin-dogs/" data-name="Stylin' Dogs" data-cat="grooming" data-state="VIC" data-suburb="Belmont (Geelong)">
+      <div class="card-thumb" style="background-image: url('./sites/stylin-dogs/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">5-Star Local Salon</span>
+          <span class="state-badge">VIC</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Belmont (Geelong), VIC</div>
+        <div class="card-title">Stylin' Dogs</div>
+        <p class="card-desc">Keeping Belmont and Geelong dogs looking sharp and smelling fresh! Fast, friendly 1-on-1 grooming, cooling summer clips, and beach sand washouts.</p>
+        <div class="card-tags">
+          <span class="card-tag">5.0 Star Rated</span>
+          <span class="card-tag">Summer Clips</span>
+          <span class="card-tag">Beach Wash</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Woof & Hoof on Brobenah -->
+    <a class="card" href="./sites/woof-hoof-on-brobenah/" data-name="Woof & Hoof on Brobenah" data-cat="grooming" data-state="NSW" data-suburb="Leeton">
+      <div class="card-thumb" style="background-image: url('./sites/woof-hoof-on-brobenah/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">Riverina Country Care</span>
+          <span class="state-badge">NSW</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Leeton, NSW</div>
+        <div class="card-title">Woof & Hoof on Brobenah</div>
+        <p class="card-desc">Dedicated country grooming destination on Brobenah Road. Farm dog mud and burr removal, heavy double-coat deshedding, and soothing hydrobaths.</p>
+        <div class="card-tags">
+          <span class="card-tag">Working Dogs</span>
+          <span class="card-tag">Burr Wash</span>
+          <span class="card-tag">Brobenah Road</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Yuppy Puppy Dog Grooming -->
+    <a class="card" href="./sites/yuppy-puppy-dog-grooming/" data-name="Yuppy Puppy Dog Grooming" data-cat="grooming" data-state="VIC" data-suburb="Macleod">
+      <div class="card-thumb" style="background-image: url('./sites/yuppy-puppy-dog-grooming/hero.jpg');">
+        <div class="card-badges">
+          <span class="cat-badge">🏆 Hall of Fame Winner</span>
+          <span class="state-badge">VIC</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Macleod, VIC</div>
+        <div class="card-title">Yuppy Puppy Dog Grooming</div>
+        <p class="card-desc">Stress-free 1-hour express grooms, 100% cage-free by appointment — 3x Banyule Business Award Winner and Hall of Fame inductee.</p>
+        <div class="card-tags">
+          <span class="card-tag">1-Hour Express</span>
+          <span class="card-tag">No Cages Ever</span>
+          <span class="card-tag">Hall of Fame</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <span>View Concept Preview</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </a>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="emptyState">
+      <h3>No concept sites match your search</h3>
+      <p>Try searching for a different suburb, state, or business category.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 AppRerum. All concept previews are demonstrations built for local Australian businesses.</p>
+    <p style="margin-top: 6px; font-size: 0.78rem;">Each preview is a demonstration concept only and is not the official website of the named business.</p>
+  </footer>
 </div>
-<footer>Each preview is a demonstration only and is not the official website of the named business.</footer>
-</body></html>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const catButtons = document.querySelectorAll('#categoryFilters .filter-btn');
+  const cards = document.querySelectorAll('#cardGrid .card');
+  const emptyState = document.getElementById('emptyState');
+  const resultsCount = document.getElementById('resultsCount');
+
+  let activeCat = 'all';
+
+  function filterCards() {
+    const query = searchInput.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const name = (card.getAttribute('data-name') || '').toLowerCase();
+      const cat = card.getAttribute('data-cat') || '';
+      const state = (card.getAttribute('data-state') || '').toLowerCase();
+      const suburb = (card.getAttribute('data-suburb') || '').toLowerCase();
+      const text = card.innerText.toLowerCase();
+
+      const matchesCat = activeCat === 'all' || cat === activeCat;
+      const matchesQuery = !query || name.includes(query) || state.includes(query) || suburb.includes(query) || text.includes(query);
+
+      if (matchesCat && matchesQuery) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (visibleCount === 0) {
+      emptyState.classList.add('visible');
+    } else {
+      emptyState.classList.remove('visible');
+    }
+
+    resultsCount.textContent = `Showing ${visibleCount} of ${cards.length} previews`;
+  }
+
+  searchInput.addEventListener('input', filterCards);
+
+  catButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      catButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeCat = btn.getAttribute('data-cat');
+      filterCards();
+    });
+  });
+</script>
+
+</body>
+</html>

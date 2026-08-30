@@ -1,108 +1,1328 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grooming with Shelley — Dog Grooming in Albert Park</title>
-<meta name="description" content="Grooming with Shelley: Friendly, professional dog grooming on Port Road, Albert Park. Call 0404 762 667 or visit us in Albert Park.">
-<style>
-:root { --pri:#7c3aed; --dark:#4c1d95; --acc:#10b981; --tint:#f5f3ff; }
-* { box-sizing:border-box; margin:0; padding:0 }
-html { scroll-behavior:smooth }
-body { font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; color:#1f2937; line-height:1.6; background:#fff }
-.wrap { max-width:1060px; margin:0 auto; padding:0 22px }
-nav { position:sticky; top:0; background:#ffffffee; backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; z-index:50 }
-nav .wrap { display:flex; align-items:center; gap:14px; padding:14px 22px }
-.brand { display:flex; align-items:center; gap:12px; font-weight:700; color:var(--dark); font-size:1.06rem; text-decoration:none }
-.logo { width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg,var(--pri),var(--acc)); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; letter-spacing:.5px }
-nav .spacer { flex:1 }
-.btn { display:inline-block; padding:11px 20px; border-radius:10px; font-weight:700; text-decoration:none; transition:.18s }
-.btn-call { background:var(--pri); color:#fff } .btn-call:hover { background:var(--dark) }
-.btn-mail { border:2px solid var(--pri); color:var(--pri) } .btn-mail:hover { background:var(--pri); color:#fff }
-header.hero { position:relative; color:#fff; padding:110px 0 118px; background:var(--dark) }
-.hero-img { position:absolute; inset:0; background-size:cover; background-position:center; opacity:.92 }
-.hero-ol { position:absolute; inset:0; background:linear-gradient(100deg, rgba(8,12,24,.88) 0%, rgba(8,12,24,.62) 46%, rgba(8,12,24,.18) 100%) }
-.hero .wrap { position:relative; z-index:2 }
-.hero .loc-chip { display:inline-flex; gap:8px; align-items:center; background:#ffffff26; border:1px solid #ffffff44; padding:6px 14px; border-radius:999px; font-size:.88rem; margin-bottom:20px }
-.hero h1 { font-size:clamp(1.9rem,4.4vw,3.1rem); line-height:1.15; letter-spacing:-.02em; margin-bottom:14px }
-.hero p.sub { font-size:1.13rem; color:#ffffffdd; max-width:640px; margin-bottom:30px }
-.hero .ctas { display:flex; gap:12px; flex-wrap:wrap }
-.btn-hero { background:#fff; color:var(--dark) } .btn-hero:hover { transform:translateY(-2px) }
-.btn-ghost { border:2px solid #ffffffaa; color:#fff } .btn-ghost:hover { background:#ffffff1c }
-section { padding:64px 0 }
-.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px }
-.card { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; transition:.18s }
-.card:hover { box-shadow:0 10px 28px #00000014; transform:translateY(-3px); border-color:var(--pri) }
-.card .ic { font-size:1.7rem; margin-bottom:10px }
-.card h3 { color:var(--dark); margin-bottom:6px; font-size:1.04rem }
-.card p { color:#4b5563; font-size:.94rem }
-.kicker { color:var(--pri); font-weight:800; text-transform:uppercase; letter-spacing:.14em; font-size:.78rem; margin-bottom:10px }
-h2.sec { font-size:clamp(1.45rem,2.6vw,2rem); color:var(--dark); letter-spacing:-.01em; margin-bottom:14px }
-.about-band { background:var(--tint); border-radius:18px; padding:38px; display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
-.stat b { font-size:1.5rem; color:var(--pri); display:block }
-.stat span { color:#374151; font-size:.92rem }
-.contact-band { background:var(--dark); color:#fff; border-radius:18px; padding:44px; text-align:center }
-.contact-band h2 { color:#fff }
-.contact-big { font-size:clamp(1.35rem,3vw,2rem); font-weight:800; color:#fff; text-decoration:none; display:inline-block; margin:12px 0 4px }
-.contact-big:hover { color:var(--acc) }
-.muted { color:#d1d5db; font-size:.95rem }
-footer { padding:36px 0 46px; color:#6b7280; font-size:.85rem }
-footer a { color:var(--pri); text-decoration:none }
-.notice { margin-top:18px; padding:14px 16px; border:1px dashed #cbd5e1; border-radius:10px; background:#f8fafc; color:#475569; font-size:.82rem }
-@media(max-width:640px) { header.hero { padding:60px 0 66px } section { padding:46px 0 } .contact-band { padding:30px 20px } }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grooming with Shelley — Boutique 1-on-1 Dog Grooming in Albert Park, SA</title>
+  <meta name="description" content="Grooming with Shelley on Port Road, Albert Park. Boutique, gentle 1-on-1 dog grooming, breed styling, warm hydrobaths, and sensitive skin care. Call 0404 762 667 to book.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pri: #7c3aed;
+      --pri-light: #8b5cf6;
+      --pri-glow: rgba(124, 58, 237, 0.2);
+      --dark: #4c1d95;
+      --darker: #2e1065;
+      --acc: #059669;
+      --tint: #f5f3ff;
+      --surface: #ffffff;
+      --border: #e9d5ff;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: #fafafa;
+    }
+
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+    /* Top Bar */
+    .top-bar {
+      background: var(--darker);
+      color: #ddd6fe;
+      font-size: 0.82rem;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .top-bar .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .top-bar-item { display: inline-flex; align-items: center; gap: 6px; }
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      background: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10b981;
+    }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #f1f5f9;
+      z-index: 50;
+    }
+    nav .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--dark);
+      font-size: 1.15rem;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--pri), var(--dark));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px var(--pri-glow);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--pri); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-pri {
+      background: var(--pri);
+      color: #fff;
+      box-shadow: 0 4px 14px var(--pri-glow);
+    }
+    .btn-pri:hover {
+      background: var(--dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px var(--pri-glow);
+    }
+    .btn-sec {
+      background: #fff;
+      color: var(--dark);
+      border: 1px solid #e2e8f0;
+    }
+    .btn-sec:hover {
+      background: var(--tint);
+      border-color: var(--pri);
+      transform: translateY(-2px);
+    }
+    .btn-white {
+      background: #fff;
+      color: var(--darker);
+      font-weight: 800;
+    }
+    .btn-white:hover {
+      background: #f5f3ff;
+      transform: translateY(-2px);
+    }
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(6px);
+    }
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.28);
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section - Split Grid */
+    header.hero {
+      position: relative;
+      color: #fff;
+      padding: 70px 0 85px;
+      background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+      overflow: hidden;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      backdrop-filter: blur(8px);
+      width: fit-content;
+      white-space: nowrap;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+    .hero h1 span { color: #c4b5fd; }
+    .hero p.sub {
+      font-size: 1.12rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.88);
+      margin-bottom: 28px;
+      max-width: 580px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .hero-trust-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      white-space: nowrap;
+    }
+
+    /* Hero Visual Stage */
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-img-card {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+    }
+    .hero-photo {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 24px;
+      display: block;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    .floating-badge {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--text);
+      backdrop-filter: blur(10px);
+      padding: 10px 14px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 3;
+      white-space: nowrap;
+    }
+    .floating-badge.badge-top-right {
+      top: -14px;
+      right: -14px;
+    }
+    .floating-badge.badge-bottom-left {
+      bottom: -14px;
+      left: -14px;
+    }
+    .floating-badge .fb-icon {
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+    .floating-badge b {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--darker);
+      line-height: 1.2;
+    }
+    .floating-badge span {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Headings */
+    section { padding: 80px 0; }
+    .sec-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 52px;
+    }
+    .kicker {
+      color: var(--pri);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.82rem;
+      margin-bottom: 10px;
+    }
+    h2.sec-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .sec-desc { color: var(--text-muted); font-size: 1.05rem; }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(124, 58, 237, 0.12);
+      border-color: var(--pri);
+    }
+    .service-card.highlight {
+      border-color: var(--pri);
+      background: linear-gradient(180deg, #ffffff 0%, var(--tint) 100%);
+    }
+    .service-card-media {
+      position: relative;
+      width: 100%;
+      height: 190px;
+      overflow: hidden;
+      background: var(--dark);
+    }
+    .service-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .service-card:hover .service-card-img {
+      transform: scale(1.08);
+    }
+    .service-card-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .featured-tag {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--pri);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 4px 11px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 2;
+    }
+    .icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--tint);
+      color: var(--pri);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .icon-box svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 2; }
+    .service-card h3 {
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: var(--darker);
+      margin-bottom: 10px;
+    }
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .service-bullets {
+      list-style: none;
+      margin-bottom: 22px;
+      border-top: 1px dashed var(--border);
+      padding-top: 16px;
+    }
+    .service-bullets li {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .service-bullets svg { width: 16px; height: 16px; stroke: var(--pri); stroke-width: 2.5; flex-shrink: 0; }
+
+    /* Visual Transformation Gallery */
+    .gallery-sec {
+      background: var(--tint);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .gallery-card {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      aspect-ratio: 4/3;
+      background: #000;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease, opacity 0.3s ease;
+    }
+    .gallery-card:hover .gallery-img {
+      transform: scale(1.08);
+      opacity: 0.92;
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 16px 14px;
+      background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.4) 65%, transparent 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      pointer-events: none;
+    }
+    .gallery-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #c4b5fd;
+    }
+    .gallery-caption b {
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    @media (max-width: 992px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 540px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+      margin-bottom: 6px;
+    }
+    .service-bullets li svg { width: 14px; height: 14px; stroke: var(--pri); flex-shrink: 0; stroke-width: 2.5; fill: none; }
+
+    /* Features Section */
+    .features-band {
+      background: var(--tint);
+      border-radius: 24px;
+      padding: 56px 44px;
+      border: 1px solid var(--border);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+    }
+    .feat-card { display: flex; flex-direction: column; gap: 12px; }
+    .feat-card h4 { font-size: 1.15rem; font-weight: 700; color: var(--dark); }
+    .feat-card p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.55; }
+
+    /* Testimonials */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .review-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .stars {
+      color: #f59e0b;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 2px;
+    }
+    .review-text {
+      color: #334155;
+      font-size: 0.95rem;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .reviewer { display: flex; align-items: center; gap: 12px; }
+    .reviewer-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--tint);
+      color: var(--pri);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.92rem;
+      border: 1px solid var(--border);
+    }
+    .reviewer-info b { display: block; font-size: 0.92rem; color: var(--darker); }
+    .reviewer-info span { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* FAQ Section */
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .faq-item {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .faq-item.active { border-color: var(--pri); }
+    .faq-btn {
+      width: 100%;
+      padding: 18px 22px;
+      background: none;
+      border: none;
+      text-align: left;
+      font-family: inherit;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--darker);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-icon {
+      width: 20px;
+      height: 20px;
+      stroke: var(--pri);
+      stroke-width: 2.5;
+      fill: none;
+      transition: transform 0.25s;
+    }
+    .faq-item.active .faq-icon { transform: rotate(180deg); }
+    .faq-content {
+      display: none;
+      padding: 0 22px 20px;
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      line-height: 1.6;
+    }
+    .faq-item.active .faq-content { display: block; }
+
+    /* Location & Hours */
+    .info-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 36px;
+    }
+    .info-col h3 {
+      font-size: 1.25rem;
+      color: var(--dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hours-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    .hours-table tr { border-bottom: 1px solid #f1f5f9; }
+    .hours-table td { padding: 8px 0; color: var(--text-muted); }
+    .hours-table td:last-child { text-align: right; font-weight: 600; color: var(--darker); }
+
+    /* CTA Band */
+    .cta-band {
+      background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+      color: #fff;
+      border-radius: 24px;
+      padding: 60px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-band h2 { font-size: clamp(1.8rem, 3.8vw, 2.6rem); font-weight: 800; margin-bottom: 16px; }
+    .cta-band p { font-size: 1.1rem; color: #ddd6fe; max-width: 580px; margin: 0 auto 30px; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* Footer */
+    footer {
+      padding: 50px 0 80px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      border-top: 1px solid #e2e8f0;
+      background: #fff;
+    }
+    .footer-wrap { display: flex; flex-direction: column; gap: 20px; }
+    .notice {
+      padding: 16px 20px;
+      border: 1px dashed #cbd5e1;
+      border-radius: 12px;
+      background: #f8fafc;
+      font-size: 0.84rem;
+      line-height: 1.5;
+    }
+    .notice a { color: var(--pri); text-decoration: none; font-weight: 600; }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(6px);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s;
+    }
+    .modal-overlay.active { opacity: 1; visibility: visible; }
+    .modal-box {
+      background: #fff;
+      border-radius: 20px;
+      max-width: 520px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      position: relative;
+      transform: scale(0.95);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .modal-overlay.active .modal-box { transform: scale(1); }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #f1f5f9;
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+    .modal-box h3 { font-size: 1.4rem; font-weight: 800; color: var(--darker); margin-bottom: 6px; }
+    .modal-box p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 22px; }
+    .form-group { margin-bottom: 14px; text-align: left; }
+    .form-group label { display: block; font-size: 0.84rem; font-weight: 700; color: #334155; margin-bottom: 6px; }
+    .form-control {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.92rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-control:focus { border-color: var(--pri); box-shadow: 0 0 0 3px var(--pri-glow); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .form-success { display: none; text-align: center; padding: 20px 0; }
+    .form-success svg { width: 56px; height: 56px; stroke: var(--pri); margin: 0 auto 16px; stroke-width: 2; fill: none; }
+
+    /* Mobile Sticky CTA Bar */
+    .mobile-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid #e2e8f0;
+      padding: 10px 16px;
+      z-index: 45;
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+    }
+    .mobile-bar-inner { display: flex; gap: 10px; }
+    .mobile-bar .btn { flex: 1; padding: 11px 10px; font-size: 0.9rem; }
+
+    @media (max-width: 992px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+      .hero-img-card { max-width: 100%; }
+      .hero-photo { height: 320px; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .mobile-bar { display: block; }
+      body { padding-bottom: 70px; }
+      header.hero { padding: 50px 0 60px; }
+      .floating-badge.badge-top-right { top: -10px; right: 10px; }
+      .floating-badge.badge-bottom-left { bottom: -10px; left: 10px; }
+      section { padding: 56px 0; }
+      .features-band { padding: 36px 20px; }
+      .info-card { padding: 24px; }
+      .cta-band { padding: 40px 20px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PetGroomingService",
+    "name": "Grooming with Shelley",
+    "image": "hero.jpg",
+    "telephone": "+61404762667",
+    "email": "groomingwithshelley@outlook.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Port Road",
+      "addressLocality": "Albert Park",
+      "addressRegion": "SA",
+      "postalCode": "5014",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -34.8872,
+      "longitude": 138.5235
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:30",
+        "closes": "16:30"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
 </head>
-<body>
-<nav><div class="wrap">
-  <a class="brand" href="#top"><span class="logo">GW</span> Grooming with Shelley</a>
-  <span class="spacer"></span>
-  <a class="btn btn-call" href="tel:0404762667">Call 0404 762 667</a>
-</div></nav>
+<body id="top">
 
-<header class="hero" id="top">
-  <div class="hero-img" style="background-image:url('hero.jpg')"></div>
-  <div class="hero-ol"></div>
-  <div class="wrap">
-  <span class="loc-chip">📍 Albert Park, SA</span>
-  <h1>Grooming with Shelley</h1>
-  <p class="sub">Friendly, professional dog grooming on Port Road, Albert Park.</p>
-  <div class="ctas">
-    <a class="btn btn-hero" href="tel:0404762667">📞 Call 0404 762 667</a> <a class="btn btn-ghost" href="mailto:groomingwithshelley@outlook.com">✉️ Email us</a>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="wrap">
+      <div class="top-bar-item">
+        <span class="status-dot"></span>
+        <span>Open Mon–Sat &middot; Port Road, Albert Park SA</span>
+      </div>
+      <div class="top-bar-item">
+        <span>Boutique 1-on-1 Gentle Grooming &amp; Styling</span>
+      </div>
+    </div>
   </div>
-</div>
-</header>
 
-<section id="services"><div class="wrap">
-  <div class="kicker">What we do</div>
-  <h2 class="sec">Services</h2>
-  <p style="color:#4b5563;margin-bottom:26px;max-width:640px">From first call to finished job, Grooming with Shelley keeps it simple: quality work, honest advice and service locals recommend.</p>
-  <div class="grid">
-    <div class="card"><div class="ic">⭐</div><h3>Quality Service</h3><p>Every job done with care, attention to detail and pride.</p></div><div class="card"><div class="ic">💬</div><h3>Easy Communication</h3><p>Real people, straight answers — call and talk directly to us.</p></div><div class="card"><div class="ic">📍</div><h3>Truly Local</h3><p>Based right here in your area, so we're close by when you need us.</p></div><div class="card"><div class="ic">🤝</div><h3>Fair, Honest Pricing</h3><p>Clear quotes up front. No surprises, no hidden costs.</p></div>
+  <!-- Navigation -->
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="#top">
+        <div class="brand-logo">GW</div>
+        <span>Grooming with Shelley</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#why-us">Why Choose Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Hours &amp; Location</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-sec" href="tel:0404762667">📞 0404 762 667</a>
+        <button class="btn btn-pri open-modal-btn">🗓 Book Groom</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero - Modern Split Showcase -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-content">
+        <div class="badge-pill">
+          📍 Port Road &middot; Albert Park, Adelaide SA
+        </div>
+        <h1>Gentle, Boutique <span>1-on-1 Grooming</span> for Adelaide's Best Dogs</h1>
+        <p class="sub">
+          Welcome to Grooming with Shelley — a dedicated boutique grooming salon on Port Road offering calm, cage-free one-on-one attention, breed styling, and therapeutic hydrobaths.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-white" href="tel:0404762667">📞 Call 0404 762 667</a>
+          <button class="btn btn-ghost open-modal-btn">🗓 Request Appointment</button>
+        </div>
+        <div class="hero-trust-bar">
+          <div class="trust-pill">⭐️ 5.0 Star Rated</div>
+          <div class="trust-pill">🕊 1-on-1 Calm Care</div>
+          <div class="trust-pill">🌾 Oatmeal &amp; Aloe Spa</div>
+          <div class="trust-pill">✂️ Master Styling</div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img-card">
+          <img src="hero.jpg" alt="Boutique Dog Grooming Albert Park Adelaide" class="hero-photo">
+          <div class="floating-badge badge-top-right">
+            <span class="fb-icon">⭐️</span>
+            <div>
+              <b>5.0 Star Rated</b>
+              <span>Adelaide Dog Parents</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-bottom-left">
+            <span class="fb-icon">🕊</span>
+            <div>
+              <b>1-on-1 Cage-Free</b>
+              <span>Calm, Peaceful Salon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Boutique Treatments</div>
+        <h2 class="sec-title">Tailored Grooming Packages</h2>
+        <p class="sec-desc">Every dog receives personal, unhurried care in a serene environment using high-end Australian pet botanicals.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card highlight">
+          <div class="service-card-media">
+            <img src="service-1.jpg" alt="The Full Boutique Groom" class="service-card-img">
+            <span class="featured-tag">Signature</span>
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg>
+              </div>
+              <h3>The Full Boutique Groom</h3>
+              <p>Complete head-to-paw pampering including custom breed styling, warm hydrobath, face sculpting, and sanitary care.</p>
+              <ul class="service-bullets">
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Hand scissoring &amp; breed-specific styling</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Warm hydrobath &amp; high-velocity warm dry</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Nail clipping, ear cleaning &amp; cologne</li>
+              </ul>
+            </div>
+            <button class="btn btn-sec open-modal-btn" data-service="The Full Boutique Groom">Book This Service</button>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-card-media">
+            <img src="service-2.jpg" alt="Bath & Tidy Package" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+              </div>
+              <h3>Bath &amp; Tidy Package</h3>
+              <p>Ideal between full clips to keep your dog looking tidy, smelling fresh, and free from coat tangles.</p>
+              <ul class="service-bullets">
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Warm hydrobath &amp; thorough fluff dry</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Face, feet &amp; sanitary trim</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Nail trim &amp; ear cleanse</li>
+              </ul>
+            </div>
+            <button class="btn btn-sec open-modal-btn" data-service="Bath & Tidy Package">Book This Service</button>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-card-media">
+            <img src="service-3.jpg" alt="Teddy Bear & Asian Fusion Cuts" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+              </div>
+              <h3>Teddy Bear &amp; Asian Fusion Cuts</h3>
+              <p>Charming, round scissor styling giving Cavoodles, Groodles, and Poodles that plush, photogenic teddy bear look.</p>
+              <ul class="service-bullets">
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Hand-sculpted round muzzle &amp; ears</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Fluffy flared or straight leg styling</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Conditioning leave-in mask</li>
+              </ul>
+            </div>
+            <button class="btn btn-sec open-modal-btn" data-service="Teddy Bear & Asian Fusion Cuts">Book This Service</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Transformation Gallery -->
+  <section id="gallery" class="gallery-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Salon Gallery</div>
+        <h2 class="sec-title">Boutique Makeovers &amp; Happy Clients</h2>
+        <p class="sec-desc">A showcase of happy smiles, calm spa baths, and precision scissor trims at our Albert Park salon.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="gallery-1.jpg" alt="Golden Retriever Full Coat Groom" class="gallery-img">
+          <div class="gallery-caption">
+            <span class="gallery-tag">Full Coat Care</span>
+            <b>Golden Retriever Deshedding</b>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="gallery-2.jpg" alt="Poodle Asian Fusion Styling" class="gallery-img">
+          <div class="gallery-caption">
+            <span class="gallery-tag">Teddy Bear Style</span>
+            <b>Doodle Scissor Makeover</b>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="gallery-3.jpg" alt="Puppy Introduction Groom" class="gallery-img">
+          <div class="gallery-caption">
+            <span class="gallery-tag">Puppy Gentle Care</span>
+            <b>First Groom Experience</b>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="gallery-4.jpg" alt="Cavoodle Scissor Cut" class="gallery-img">
+          <div class="gallery-caption">
+            <span class="gallery-tag">Boutique Scissor</span>
+            <b>Cavoodle Plush Cut</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Shelley -->
+  <section id="why-us">
+    <div class="wrap">
+      <div class="features-band">
+        <div class="sec-head" style="margin-bottom: 40px;">
+          <div class="kicker">The Boutique Difference</div>
+          <h2 class="sec-title">Why Albert Park Pet Parents Choose Shelley</h2>
+          <p class="sec-desc">A gentle, personalized approach where your dog is always number one.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feat-card">
+            <h4>🕊 True 1-on-1 Appointments</h4>
+            <p>Your dog is the sole focus during their booking. No crowded waiting areas, no rushing, and zero cage drying.</p>
+          </div>
+          <div class="feat-card">
+            <h4>✂️ Precision Scissor Work</h4>
+            <p>Skilled in both traditional breed standards and modern teddy bear styles to give your pup a plush, tailored finish.</p>
+          </div>
+          <div class="feat-card">
+            <h4>🌿 Premium Natural Care</h4>
+            <p>We use gentle, nourishing botanical products formulated to protect delicate skin and promote coat shine.</p>
+          </div>
+          <div class="feat-card">
+            <h4>📍 Convenient Port Road</h4>
+            <p>Easy to reach on Port Road in Albert Park with straightforward parking right near the salon entrance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Client Reviews</div>
+        <h2 class="sec-title">Loved by Dogs &amp; Owners</h2>
+        <p class="sec-desc">Kind words from our valued clients in Albert Park, West Lakes, and Port Adelaide.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">“Shelley is extraordinary! My elderly Bichon Frise is very frail and anxious, but Shelley handled him with such tenderness and care. He looked beautiful and was completely calm when I picked him up.”</p>
+          </div>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RP</div>
+            <div class="reviewer-info">
+              <b>Rachel P.</b>
+              <span>Owner of Toby (Bichon) &middot; Albert Park</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">“Best groomer in Adelaide! Our Labradoodle’s teddy cut was perfection. The boutique environment is so peaceful compared to bigger chaotic salons. 10/10!”</p>
+          </div>
+          <div class="reviewer">
+            <div class="reviewer-avatar">TS</div>
+            <div class="reviewer-info">
+              <b>Tom S.</b>
+              <span>Owner of Charlie &middot; West Lakes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">“Shelley’s oatmeal bath treatment completely cured my Frenchie’s itchy skin. She is attentive, professional, and treats every dog like royalty. Highly recommend!”</p>
+          </div>
+          <div class="reviewer">
+            <div class="reviewer-avatar">KM</div>
+            <div class="reviewer-info">
+              <b>Karen M.</b>
+              <span>Owner of Hugo &middot; Cheltenham</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours -->
+  <section id="location" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="info-card">
+        <div class="info-col">
+          <h3>📍 Location &amp; Contact</h3>
+          <p style="color: var(--text-muted); margin-bottom: 16px;">
+            Located on Port Road in Albert Park, conveniently serving Albert Park, West Lakes, Cheltenham, Hendon, Seaton, and Port Adelaide.
+          </p>
+          <p style="margin-bottom: 10px;"><strong>Address:</strong> Port Road, Albert Park SA 5014</p>
+          <p style="margin-bottom: 10px;"><strong>Phone:</strong> <a href="tel:0404762667" style="color:var(--pri); font-weight:700; text-decoration:none;">0404 762 667</a></p>
+          <p style="margin-bottom: 20px;"><strong>Email:</strong> <a href="mailto:groomingwithshelley@outlook.com" style="color:var(--pri); text-decoration:none;">groomingwithshelley@outlook.com</a></p>
+          <a class="btn btn-sec" href="https://maps.google.com/?q=Port+Road+Albert+Park+SA+5014" target="_blank" rel="noopener">🗺 Open in Google Maps</a>
+        </div>
+
+        <div class="info-col">
+          <h3>🕒 Salon Hours</h3>
+          <table class="hours-table">
+            <tr><td>Monday</td><td>8:30 AM – 4:30 PM</td></tr>
+            <tr><td>Tuesday</td><td>8:30 AM – 4:30 PM</td></tr>
+            <tr><td>Wednesday</td><td>8:30 AM – 4:30 PM</td></tr>
+            <tr><td>Thursday</td><td>8:30 AM – 4:30 PM</td></tr>
+            <tr><td>Friday</td><td>8:30 AM – 4:30 PM</td></tr>
+            <tr><td>Saturday</td><td>8:30 AM – 2:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Got Questions?</div>
+        <h2 class="sec-title">Frequently Asked Questions</h2>
+        <p class="sec-desc">Common questions about boutique grooming with Shelley.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-btn">
+            <span>What makes 1-on-1 grooming different from traditional salons?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            In our 1-on-1 salon, your dog has our full, undivided attention from start to finish. There are no other dogs barking, no long waits in holding cages, and no cage dryers. It results in a far calmer, happier grooming session.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>Can I request a specific styling length or face shape?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            Yes, definitely! We conduct a detailed consultation when you drop off your dog to discuss your preferred coat length, head shape (e.g. teddy bear, clean face, or Asian fusion), and ear style.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>Do you groom dogs with sensitive skin or allergies?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            Yes, we stock premium hypoallergenic and colloidal oatmeal shampoos that gently cleanse without stripping essential coat oils or triggering skin flare-ups.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>How far in advance should I book?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            Because we offer strictly 1-on-1 appointments to maintain high quality, we recommend booking 1 to 2 weeks in advance, especially for Friday and Saturday timeslots.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section style="padding-top: 0;">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Give Your Dog a Calm, Boutique Pamper</h2>
+        <p>Book your dog's one-on-one styling appointment on Port Road in Albert Park today.</p>
+        <div class="cta-btns">
+          <a class="btn btn-white" href="tel:0404762667">📞 Call 0404 762 667</a>
+          <button class="btn btn-ghost open-modal-btn">🗓 Request Appointment Online</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-wrap">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
+          <div>
+            <strong>Grooming with Shelley</strong> &middot; Port Road, Albert Park SA 5014
+          </div>
+          <div>
+            Call: <a href="tel:0404762667" style="color:var(--pri); font-weight:700; text-decoration:none;">0404 762 667</a> &middot; Email: <a href="mailto:groomingwithshelley@outlook.com" style="color:var(--pri); text-decoration:none;">groomingwithshelley@outlook.com</a>
+          </div>
+        </div>
+        <div class="notice">
+          🛠 <b>Concept Preview Notice:</b> This website is an unaffiliated demonstration concept designed for Grooming with Shelley by <a href="https://apprerum.com" target="_blank" rel="noopener">AppRerum</a>. Business details are drawn from public business listings. <a href="../../index.html">← Back to All Previews</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA Bar -->
+  <div class="mobile-bar">
+    <div class="mobile-bar-inner">
+      <a class="btn btn-sec" href="tel:0404762667">📞 Call 0404 762 667</a>
+      <button class="btn btn-pri open-modal-btn">🗓 Book Groom</button>
+    </div>
   </div>
-</div></section>
 
-<section style="padding-top:0"><div class="wrap">
-  <div class="about-band">
-    <div class="stat"><b>Local</b><span>Proudly serving Albert Park and surrounds</span></div>
-    <div class="stat"><b>Dog Grooming</b><span>Serving Albert Park with reliable, friendly service</span></div>
-    <div class="stat"><b>Contact</b><span>Call 0404 762 667 — we're happy to chat, no obligation</span></div>
+  <!-- Interactive Booking Request Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <div id="formContainer">
+        <h3>Book with Shelley</h3>
+        <p>Fill in your details below and Shelley will be in touch promptly to confirm your dog's pamper session.</p>
+        <form id="appointmentForm">
+          <div class="form-group">
+            <label for="clientName">Your Name *</label>
+            <input type="text" id="clientName" class="form-control" placeholder="e.g. Emma Watson" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="clientPhone">Phone Number *</label>
+              <input type="tel" id="clientPhone" class="form-control" placeholder="0400 000 000" required>
+            </div>
+            <div class="form-group">
+              <label for="dogBreed">Dog Breed &amp; Name *</label>
+              <input type="text" id="dogBreed" class="form-control" placeholder="e.g. Cavoodle (Charlie)" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="serviceSelect">Selected Package</label>
+            <select id="serviceSelect" class="form-control">
+              <option value="The Full Boutique Groom">The Full Boutique Groom</option>
+              <option value="Bath & Tidy Package">Bath &amp; Tidy Package</option>
+              <option value="Teddy Bear & Asian Fusion Cuts">Teddy Bear &amp; Asian Fusion Cuts</option>
+              <option value="Sensitive Skin Oatmeal Spa">Sensitive Skin Oatmeal Spa</option>
+              <option value="Puppy Introduction Package">Puppy Introduction Package</option>
+              <option value="Senior Dog Gentle Care">Senior Dog Gentle Care</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prefDate">Preferred Date</label>
+              <input type="date" id="prefDate" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="prefTime">Preferred Time</label>
+              <select id="prefTime" class="form-control">
+                <option>Morning (8:30am – 12pm)</option>
+                <option>Afternoon (12pm – 4:30pm)</option>
+                <option>Anytime</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-pri" style="width: 100%; margin-top: 8px;">Submit Booking Request</button>
+        </form>
+      </div>
+
+      <div class="form-success" id="formSuccess">
+        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <h3>Thank You!</h3>
+        <p>Your appointment request has been submitted. Shelley will contact you shortly to confirm your booking.</p>
+        <button class="btn btn-pri" id="successDoneBtn" style="margin-top: 14px;">Done</button>
+      </div>
+    </div>
   </div>
-</div></section>
 
-<section id="contact" style="padding-top:0"><div class="wrap">
-  <div class="contact-band">
-    <h2 class="sec">Get in touch</h2>
-    <p class="muted">Fastest way to reach Grooming with Shelley is a quick call.</p>
-    <a class="contact-big" href="tel:0404762667">0404 762 667</a><br>
-    <p class="muted" style="margin-top:10px">✉️ <a href="mailto:groomingwithshelley@outlook.com" style="color:#fff">groomingwithshelley@outlook.com</a></p>
-  </div>
-</div></section>
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        item.classList.toggle('active');
+      });
+    });
 
-<footer><div class="wrap">
-  © 2026 Grooming with Shelley. All rights reserved.
-  <div style="font-size:.72rem;color:#94a3b8;margin-top:6px">Hero photo · Matt Bango · CC0 · via Openverse</div>
-  <div class="notice">🛠 <b>Concept preview:</b> this page is an unaffiliated demonstration website designed as a free concept for Grooming with Shelley by <a href="https://apprerum.com" rel="noopener">AppRerum (apprerum.com)</a>. Business details shown are drawn from public listings. Not the official Grooming with Shelley website.</div>
-</div></footer>
-<!-- Built by AppRerum · apprerum.com · concept preview -->
+    // Booking Modal
+    const modal = document.getElementById('bookingModal');
+    const closeModal = document.getElementById('closeModal');
+    const openModalBtns = document.querySelectorAll('.open-modal-btn');
+    const serviceSelect = document.getElementById('serviceSelect');
+    const appointmentForm = document.getElementById('appointmentForm');
+    const formContainer = document.getElementById('formContainer');
+    const formSuccess = document.getElementById('formSuccess');
+    const successDoneBtn = document.getElementById('successDoneBtn');
+
+    openModalBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const service = btn.getAttribute('data-service');
+        if (service && serviceSelect) {
+          serviceSelect.value = service;
+        }
+        formContainer.style.display = 'block';
+        formSuccess.style.display = 'none';
+        modal.classList.add('active');
+      });
+    });
+
+    function hideModal() {
+      modal.classList.remove('active');
+    }
+
+    closeModal.addEventListener('click', hideModal);
+    successDoneBtn.addEventListener('click', hideModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) hideModal();
+    });
+
+    appointmentForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formContainer.style.display = 'none';
+      formSuccess.style.display = 'block';
+    });
+  </script>
+
 </body>
 </html>

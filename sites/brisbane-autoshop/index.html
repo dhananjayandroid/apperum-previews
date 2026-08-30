@@ -1,108 +1,1338 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Brisbane Autoshop — Mechanic &amp; Auto Repairs in Eight Mile Plains (Brisbane)</title>
-<meta name="description" content="Brisbane Autoshop: Logan Road workshop servicing all makes including 4WDs — qualified mechanics, diagnostics and repairs. Call  or visit us in Eight Mile Plains (Brisbane).">
-<style>
-:root { --pri:#334155; --dark:#0f172a; --acc:#f59e0b; --tint:#f1f5f9; }
-* { box-sizing:border-box; margin:0; padding:0 }
-html { scroll-behavior:smooth }
-body { font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; color:#1f2937; line-height:1.6; background:#fff }
-.wrap { max-width:1060px; margin:0 auto; padding:0 22px }
-nav { position:sticky; top:0; background:#ffffffee; backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; z-index:50 }
-nav .wrap { display:flex; align-items:center; gap:14px; padding:14px 22px }
-.brand { display:flex; align-items:center; gap:12px; font-weight:700; color:var(--dark); font-size:1.06rem; text-decoration:none }
-.logo { width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg,var(--pri),var(--acc)); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; letter-spacing:.5px }
-nav .spacer { flex:1 }
-.btn { display:inline-block; padding:11px 20px; border-radius:10px; font-weight:700; text-decoration:none; transition:.18s }
-.btn-call { background:var(--pri); color:#fff } .btn-call:hover { background:var(--dark) }
-.btn-mail { border:2px solid var(--pri); color:var(--pri) } .btn-mail:hover { background:var(--pri); color:#fff }
-header.hero { position:relative; color:#fff; padding:110px 0 118px; background:var(--dark) }
-.hero-img { position:absolute; inset:0; background-size:cover; background-position:center; opacity:.92 }
-.hero-ol { position:absolute; inset:0; background:linear-gradient(100deg, rgba(8,12,24,.88) 0%, rgba(8,12,24,.62) 46%, rgba(8,12,24,.18) 100%) }
-.hero .wrap { position:relative; z-index:2 }
-.hero .loc-chip { display:inline-flex; gap:8px; align-items:center; background:#ffffff26; border:1px solid #ffffff44; padding:6px 14px; border-radius:999px; font-size:.88rem; margin-bottom:20px }
-.hero h1 { font-size:clamp(1.9rem,4.4vw,3.1rem); line-height:1.15; letter-spacing:-.02em; margin-bottom:14px }
-.hero p.sub { font-size:1.13rem; color:#ffffffdd; max-width:640px; margin-bottom:30px }
-.hero .ctas { display:flex; gap:12px; flex-wrap:wrap }
-.btn-hero { background:#fff; color:var(--dark) } .btn-hero:hover { transform:translateY(-2px) }
-.btn-ghost { border:2px solid #ffffffaa; color:#fff } .btn-ghost:hover { background:#ffffff1c }
-section { padding:64px 0 }
-.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px }
-.card { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; transition:.18s }
-.card:hover { box-shadow:0 10px 28px #00000014; transform:translateY(-3px); border-color:var(--pri) }
-.card .ic { font-size:1.7rem; margin-bottom:10px }
-.card h3 { color:var(--dark); margin-bottom:6px; font-size:1.04rem }
-.card p { color:#4b5563; font-size:.94rem }
-.kicker { color:var(--pri); font-weight:800; text-transform:uppercase; letter-spacing:.14em; font-size:.78rem; margin-bottom:10px }
-h2.sec { font-size:clamp(1.45rem,2.6vw,2rem); color:var(--dark); letter-spacing:-.01em; margin-bottom:14px }
-.about-band { background:var(--tint); border-radius:18px; padding:38px; display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
-.stat b { font-size:1.5rem; color:var(--pri); display:block }
-.stat span { color:#374151; font-size:.92rem }
-.contact-band { background:var(--dark); color:#fff; border-radius:18px; padding:44px; text-align:center }
-.contact-band h2 { color:#fff }
-.contact-big { font-size:clamp(1.35rem,3vw,2rem); font-weight:800; color:#fff; text-decoration:none; display:inline-block; margin:12px 0 4px }
-.contact-big:hover { color:var(--acc) }
-.muted { color:#d1d5db; font-size:.95rem }
-footer { padding:36px 0 46px; color:#6b7280; font-size:.85rem }
-footer a { color:var(--pri); text-decoration:none }
-.notice { margin-top:18px; padding:14px 16px; border:1px dashed #cbd5e1; border-radius:10px; background:#f8fafc; color:#475569; font-size:.82rem }
-@media(max-width:640px) { header.hero { padding:60px 0 66px } section { padding:46px 0 } .contact-band { padding:30px 20px } }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brisbane Autoshop — Expert Mechanics &amp; 4WD Specialists in Eight Mile Plains, QLD</title>
+  <meta name="description" content="Brisbane Autoshop on Logan Road, Eight Mile Plains. Qualified mechanics servicing all makes & 4WDs. Logbook servicing, computer diagnostics, brakes, suspension & repairs. Fast email quotes: brisbaneautoshop134@gmail.com.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pri: #d97706;
+      --pri-light: #f59e0b;
+      --pri-glow: rgba(217, 119, 6, 0.22);
+      --dark: #0f172a;
+      --darker: #020617;
+      --acc: #2563eb;
+      --tint: #f8fafc;
+      --surface: #ffffff;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: #fafafa;
+    }
+
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+    /* Top Bar */
+    .top-bar {
+      background: var(--darker);
+      color: #94a3b8;
+      font-size: 0.82rem;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .top-bar .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .top-bar-item { display: inline-flex; align-items: center; gap: 6px; }
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      background: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10b981;
+    }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      z-index: 50;
+    }
+    nav .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--dark);
+      font-size: 1.15rem;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      border: 1px solid rgba(217, 119, 6, 0.4);
+      color: var(--pri-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--pri); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-pri {
+      background: var(--pri);
+      color: #fff;
+      box-shadow: 0 4px 14px var(--pri-glow);
+    }
+    .btn-pri:hover {
+      background: #b45309;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px var(--pri-glow);
+    }
+    .btn-sec {
+      background: #fff;
+      color: var(--dark);
+      border: 1px solid var(--border);
+    }
+    .btn-sec:hover {
+      background: var(--tint);
+      border-color: var(--pri);
+      transform: translateY(-2px);
+    }
+    .btn-white {
+      background: #fff;
+      color: var(--darker);
+      font-weight: 800;
+    }
+    .btn-white:hover {
+      background: #f8fafc;
+      transform: translateY(-2px);
+    }
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(6px);
+    }
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.22);
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section - Split Grid */
+    header.hero {
+      position: relative;
+      color: #fff;
+      padding: 70px 0 85px;
+      background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+      overflow: hidden;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      backdrop-filter: blur(8px);
+      width: fit-content;
+      white-space: nowrap;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+    .hero h1 span { color: var(--pri-light); }
+    .hero p.sub {
+      font-size: 1.12rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.88);
+      margin-bottom: 28px;
+      max-width: 580px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .hero-trust-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      white-space: nowrap;
+    }
+
+    /* Hero Visual Stage */
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-img-card {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6);
+    }
+    .hero-photo {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 24px;
+      display: block;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    .floating-badge {
+      position: absolute;
+      background: rgba(15, 23, 42, 0.95);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 10px 14px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 3;
+      white-space: nowrap;
+    }
+    .floating-badge.badge-top-right {
+      top: -14px;
+      right: -14px;
+    }
+    .floating-badge.badge-bottom-left {
+      bottom: -14px;
+      left: -14px;
+    }
+    .floating-badge .fb-icon {
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+    .floating-badge b {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--pri-light);
+      line-height: 1.2;
+    }
+    .floating-badge span {
+      font-size: 0.74rem;
+      color: #94a3b8;
+    }
+
+    /* Section Headings */
+    section { padding: 80px 0; }
+    .sec-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 52px;
+    }
+    .kicker {
+      color: var(--pri);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.82rem;
+      margin-bottom: 10px;
+    }
+    h2.sec-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .sec-desc { color: var(--text-muted); font-size: 1.05rem; }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(220, 38, 38, 0.12);
+      border-color: var(--pri);
+    }
+    .service-card.highlight {
+      border-color: var(--pri);
+      background: linear-gradient(180deg, #ffffff 0%, var(--tint) 100%);
+    }
+    .service-card-media {
+      position: relative;
+      width: 100%;
+      height: 190px;
+      overflow: hidden;
+      background: var(--dark);
+    }
+    .service-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .service-card:hover .service-card-img {
+      transform: scale(1.08);
+    }
+    .service-card-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .featured-tag {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--pri);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 4px 11px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 2;
+    }
+    .icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--tint);
+      color: var(--pri);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .icon-box svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 2; }
+    .service-card h3 {
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: var(--darker);
+      margin-bottom: 10px;
+    }
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .service-bullets {
+      list-style: none;
+      margin-bottom: 22px;
+      border-top: 1px dashed var(--border);
+      padding-top: 16px;
+    }
+    .service-bullets li {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .service-bullets svg { width: 16px; height: 16px; stroke: var(--pri); stroke-width: 2.5; flex-shrink: 0; }
+
+    /* Workshop Gallery */
+    .gallery-sec {
+      background: var(--tint);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .gallery-card {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      aspect-ratio: 4/3;
+      background: #000;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease, opacity 0.3s ease;
+    }
+    .gallery-card:hover .gallery-img {
+      transform: scale(1.08);
+      opacity: 0.92;
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 16px 14px;
+      background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.4) 65%, transparent 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      pointer-events: none;
+    }
+    .gallery-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #fca5a5;
+    }
+    .gallery-caption b {
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    @media (max-width: 992px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 540px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+      margin-bottom: 6px;
+    }
+    .service-bullets li svg { width: 14px; height: 14px; stroke: var(--pri); flex-shrink: 0; stroke-width: 2.5; fill: none; }
+
+    /* Features Section */
+    .features-band {
+      background: var(--dark);
+      color: #fff;
+      border-radius: 24px;
+      padding: 56px 44px;
+      border: 1px solid #1e293b;
+    }
+    .features-band .sec-title { color: #fff; }
+    .features-band .sec-desc { color: #94a3b8; }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+    }
+    .feat-card { display: flex; flex-direction: column; gap: 12px; }
+    .feat-card h4 { font-size: 1.15rem; font-weight: 700; color: var(--pri-light); }
+    .feat-card p { font-size: 0.92rem; color: #cbd5e1; line-height: 1.55; }
+
+    /* Testimonials */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .review-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .stars {
+      color: var(--pri);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 2px;
+    }
+    .review-text {
+      color: #334155;
+      font-size: 0.95rem;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .reviewer { display: flex; align-items: center; gap: 12px; }
+    .reviewer-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #fffbeb;
+      color: var(--pri);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.92rem;
+      border: 1px solid var(--border);
+    }
+    .reviewer-info b { display: block; font-size: 0.92rem; color: var(--darker); }
+    .reviewer-info span { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* FAQ Section */
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .faq-item {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .faq-item.active { border-color: var(--pri); }
+    .faq-btn {
+      width: 100%;
+      padding: 18px 22px;
+      background: none;
+      border: none;
+      text-align: left;
+      font-family: inherit;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--darker);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-icon {
+      width: 20px;
+      height: 20px;
+      stroke: var(--pri);
+      stroke-width: 2.5;
+      fill: none;
+      transition: transform 0.25s;
+    }
+    .faq-item.active .faq-icon { transform: rotate(180deg); }
+    .faq-content {
+      display: none;
+      padding: 0 22px 20px;
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      line-height: 1.6;
+    }
+    .faq-item.active .faq-content { display: block; }
+
+    /* Location & Hours */
+    .info-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 36px;
+    }
+    .info-col h3 {
+      font-size: 1.25rem;
+      color: var(--dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hours-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    .hours-table tr { border-bottom: 1px solid #f1f5f9; }
+    .hours-table td { padding: 8px 0; color: var(--text-muted); }
+    .hours-table td:last-child { text-align: right; font-weight: 600; color: var(--darker); }
+
+    /* CTA Band */
+    .cta-band {
+      background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+      color: #fff;
+      border-radius: 24px;
+      padding: 60px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(217, 119, 6, 0.3);
+    }
+    .cta-band h2 { font-size: clamp(1.8rem, 3.8vw, 2.6rem); font-weight: 800; margin-bottom: 16px; }
+    .cta-band p { font-size: 1.1rem; color: #cbd5e1; max-width: 580px; margin: 0 auto 30px; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* Footer */
+    footer {
+      padding: 50px 0 80px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      border-top: 1px solid var(--border);
+      background: #fff;
+    }
+    .footer-wrap { display: flex; flex-direction: column; gap: 20px; }
+    .notice {
+      padding: 16px 20px;
+      border: 1px dashed #cbd5e1;
+      border-radius: 12px;
+      background: #f8fafc;
+      font-size: 0.84rem;
+      line-height: 1.5;
+    }
+    .notice a { color: var(--pri); text-decoration: none; font-weight: 600; }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(6px);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s;
+    }
+    .modal-overlay.active { opacity: 1; visibility: visible; }
+    .modal-box {
+      background: #fff;
+      border-radius: 20px;
+      max-width: 520px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      position: relative;
+      transform: scale(0.95);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .modal-overlay.active .modal-box { transform: scale(1); }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #f1f5f9;
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+    .modal-box h3 { font-size: 1.4rem; font-weight: 800; color: var(--darker); margin-bottom: 6px; }
+    .modal-box p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 22px; }
+    .form-group { margin-bottom: 14px; text-align: left; }
+    .form-group label { display: block; font-size: 0.84rem; font-weight: 700; color: #334155; margin-bottom: 6px; }
+    .form-control {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.92rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-control:focus { border-color: var(--pri); box-shadow: 0 0 0 3px var(--pri-glow); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .form-success { display: none; text-align: center; padding: 20px 0; }
+    .form-success svg { width: 56px; height: 56px; stroke: var(--pri); margin: 0 auto 16px; stroke-width: 2; fill: none; }
+
+    /* Mobile Sticky CTA Bar */
+    .mobile-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border);
+      padding: 10px 16px;
+      z-index: 45;
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+    }
+    .mobile-bar-inner { display: flex; gap: 10px; }
+    .mobile-bar .btn { flex: 1; padding: 11px 10px; font-size: 0.9rem; }
+
+    @media (max-width: 992px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+      .hero-img-card { max-width: 100%; }
+      .hero-photo { height: 320px; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .mobile-bar { display: block; }
+      body { padding-bottom: 70px; }
+      header.hero { padding: 50px 0 60px; }
+      .floating-badge.badge-top-right { top: -10px; right: 10px; }
+      .floating-badge.badge-bottom-left { bottom: -10px; left: 10px; }
+      section { padding: 56px 0; }
+      .features-band { padding: 36px 20px; }
+      .info-card { padding: 24px; }
+      .cta-band { padding: 40px 20px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Brisbane Autoshop",
+    "image": "hero.jpg",
+    "email": "brisbaneautoshop134@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Logan Road",
+      "addressLocality": "Eight Mile Plains",
+      "addressRegion": "QLD",
+      "postalCode": "4113",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -27.5746,
+      "longitude": 153.0964
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:30",
+        "closes": "17:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "08:00",
+        "closes": "13:00"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
 </head>
-<body>
-<nav><div class="wrap">
-  <a class="brand" href="#top"><span class="logo">BA</span> Brisbane Autoshop</a>
-  <span class="spacer"></span>
-  <a class="btn btn-call" href="mailto:brisbaneautoshop134@gmail.com">Email us</a>
-</div></nav>
+<body id="top">
 
-<header class="hero" id="top">
-  <div class="hero-img" style="background-image:url('hero.jpg')"></div>
-  <div class="hero-ol"></div>
-  <div class="wrap">
-  <span class="loc-chip">📍 Eight Mile Plains (Brisbane), QLD</span>
-  <h1>Brisbane Autoshop</h1>
-  <p class="sub">Logan Road workshop servicing all makes including 4WDs — qualified mechanics, diagnostics and repairs.</p>
-  <div class="ctas">
-    <a class="btn btn-hero" href="mailto:brisbaneautoshop134@gmail.com">✉️ Email us</a>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="wrap">
+      <div class="top-bar-item">
+        <span class="status-dot"></span>
+        <span>Open Mon–Sat &middot; Logan Road, Eight Mile Plains QLD</span>
+      </div>
+      <div class="top-bar-item">
+        <span>Logbook Servicing &middot; Diagnostics &middot; 4WD Specialists</span>
+      </div>
+    </div>
   </div>
-</div>
-</header>
 
-<section id="services"><div class="wrap">
-  <div class="kicker">What we do</div>
-  <h2 class="sec">Services</h2>
-  <p style="color:#4b5563;margin-bottom:26px;max-width:640px">From first call to finished job, Brisbane Autoshop keeps it simple: quality work, honest advice and service locals recommend.</p>
-  <div class="grid">
-    <div class="card"><div class="ic">⭐</div><h3>Quality Service</h3><p>Every job done with care, attention to detail and pride.</p></div><div class="card"><div class="ic">💬</div><h3>Easy Communication</h3><p>Real people, straight answers — email and talk directly to us.</p></div><div class="card"><div class="ic">📍</div><h3>Truly Local</h3><p>Based right here in your area, so we're close by when you need us.</p></div><div class="card"><div class="ic">🤝</div><h3>Fair, Honest Pricing</h3><p>Clear quotes up front. No surprises, no hidden costs.</p></div>
+  <!-- Navigation -->
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="#top">
+        <div class="brand-logo">BA</div>
+        <span>Brisbane Autoshop</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#why-us">Why Choose Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Hours &amp; Location</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-sec" href="mailto:brisbaneautoshop134@gmail.com">✉️ Email Quote</a>
+        <button class="btn btn-pri open-modal-btn">⚡️ Book Service</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero - Modern Split Showcase -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-content">
+        <div class="badge-pill">
+          📍 Logan Road &middot; Eight Mile Plains, Brisbane QLD
+        </div>
+        <h1>Trusted Mechanical Repairs &amp; <span>4WD Servicing</span> in Brisbane South</h1>
+        <p class="sub">
+          Logan Road workshop servicing all makes and models including 4WDs and commercial vehicles. Qualified master mechanics, advanced computer diagnostics, logbook servicing, and honest upfront pricing.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-white" href="mailto:brisbaneautoshop134@gmail.com">✉️ Email for Quick Quote</a>
+          <button class="btn btn-ghost open-modal-btn">⚡️ Book Service Online</button>
+        </div>
+        <div class="hero-trust-bar">
+          <div class="trust-pill">🔧 Certified Mechanics</div>
+          <div class="trust-pill">🚙 4WD &amp; SUV Pros</div>
+          <div class="trust-pill">🛡 Warranty Protected</div>
+          <div class="trust-pill">📊 Advanced Scanners</div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img-card">
+          <img src="hero.jpg" alt="Mechanic Workshop in Eight Mile Plains Brisbane QLD" class="hero-photo">
+          <div class="floating-badge badge-top-right">
+            <span class="fb-icon">🔧</span>
+            <div>
+              <b>Qualified Mechanics</b>
+              <span>Logan Road Workshop</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-bottom-left">
+            <span class="fb-icon">🛡</span>
+            <div>
+              <b>100% Warranty Safe</b>
+              <span>Logbook Servicing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Workshop Capabilities</div>
+        <h2 class="sec-title">Comprehensive Auto Services</h2>
+        <p class="sec-desc">Quality workmanship and premium parts to keep your vehicle running smoothly, safely, and reliably.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card highlight">
+          <div class="service-card-media">
+            <img src="service-1.jpg" alt="Logbook Servicing" class="service-card-img">
+            <span class="featured-tag">Warranty Safe</span>
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <h3>Logbook Servicing</h3>
+              <p>Maintain your new car manufacturer warranty without paying expensive dealership prices. Full stamp and checklist.</p>
+              <ul class="service-bullets">
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> 100% manufacturer warranty protected</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Premium oils &amp; OEM quality filters</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> 62-point comprehensive safety check</li>
+              </ul>
+            </div>
+            <button class="btn btn-sec open-modal-btn" data-service="Logbook Servicing">Book This Service</button>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-card-media">
+            <img src="service-2.jpg" alt="Brake & Clutch Repairs" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+              </div>
+              <h3>Brake &amp; Clutch Precision Repairs</h3>
+              <p>Precision brake pad replacements, disc rotor machining, clutch kit renewals, and hydraulic fluid flushing.</p>
+              <ul class="service-bullets">
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> High-performance brake pads &amp; rotors</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Manual clutch replacements &amp; hydraulics</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Brake line inspections &amp; fluid flush</li>
+              </ul>
+            </div>
+            <button class="btn btn-sec open-modal-btn" data-service="Brake & Clutch Repairs">Book This Service</button>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-card-media">
+            <img src="service-3.jpg" alt="Computer Diagnostics & Electrical" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3>Computer Diagnostics &amp; Electrical</h3>
+              <p>State-of-the-art scan tools to diagnose engine lights, sensor issues, starting faults, and fuel system problems accurately.</p>
+              <ul class="service-bullets">
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Check engine &amp; ABS light diagnostics</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Live sensor data &amp; ECU fault clearing</li>
+                <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Battery, alternator &amp; starter testing</li>
+              </ul>
+            </div>
+            <button class="btn btn-sec open-modal-btn" data-service="Computer Diagnostics & Electrical">Book This Service</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Workshop Showcase Gallery -->
+  <section id="gallery" class="gallery-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Workshop in Action</div>
+        <h2 class="sec-title">Recent Repairs &amp; Fleet Servicing</h2>
+        <p class="sec-desc">A look inside our Logan Road workshop — quality tooling, precision diagnostics, and expert craftsmanship.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="gallery-1.jpg" alt="Engine Bay Tuning & Diagnostics" class="gallery-img">
+          <div class="gallery-caption">
+            <span class="gallery-tag">Engine Tuning</span>
+            <b>Major Performance Service</b>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="gallery-2.jpg" alt="Suspension & Steering Overhaul" class="gallery-img">
+          <div class="gallery-caption">
+            <span class="gallery-tag">Suspension</span>
+            <b>4WD Strut &amp; Bush Renewal</b>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="gallery-3.jpg" alt="OEM Precision Tooling" class="gallery-img">
+          <div class="gallery-caption">
+            <span class="gallery-tag">Precision Tools</span>
+            <b>OEM Calibrated Equipment</b>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="gallery-4.jpg" alt="Comprehensive Safety Check" class="gallery-img">
+          <div class="gallery-caption">
+            <span class="gallery-tag">Safety Inspection</span>
+            <b>62-Point Vehicle Audit</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why-us" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="features-band">
+        <div class="sec-head" style="margin-bottom: 40px;">
+          <div class="kicker">The Autoshop Advantage</div>
+          <h2 class="sec-title">Why Brisbane Drivers Choose Us</h2>
+          <p class="sec-desc">Honest advice, expert workmanship, and fast turnarounds right on Logan Road.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feat-card">
+            <h4>🔧 Qualified Master Mechanics</h4>
+            <p>Experienced technicians trained across European, Japanese, Korean, and Australian vehicles.</p>
+          </div>
+          <div class="feat-card">
+            <h4>📊 Accurate Diagnostics</h4>
+            <p>We invest in OEM-grade diagnostic tools to find the root cause fast, preventing unnecessary parts swapping.</p>
+          </div>
+          <div class="feat-card">
+            <h4>🤝 Upfront Honest Pricing</h4>
+            <p>No surprise bills. We always explain what needs doing and provide clear quotes before starting work.</p>
+          </div>
+          <div class="feat-card">
+            <h4>📍 Convenient Logan Road Hub</h4>
+            <p>Easy access in Eight Mile Plains near the Gateway and Pacific Motorways for simple drop-offs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Customer Reviews</div>
+        <h2 class="sec-title">Trusted by Southside Drivers</h2>
+        <p class="sec-desc">Read feedback from our regular clients in Eight Mile Plains, Sunnybank, and Rochedale.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">“Brought my Toyota Prado in for logbook servicing and a brake overhaul. Work was done on time, price was significantly cheaper than the dealer, and the car drives like new!”</p>
+          </div>
+          <div class="reviewer">
+            <div class="reviewer-avatar">GC</div>
+            <div class="reviewer-info">
+              <b>Gary C.</b>
+              <span>Toyota Prado Owner &middot; Eight Mile Plains</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">“Diagnosed a strange gearbox shudder in my Mazda that two other workshops couldn't figure out. Highly skilled mechanics and great communication by email.”</p>
+          </div>
+          <div class="reviewer">
+            <div class="reviewer-avatar">SL</div>
+            <div class="reviewer-info">
+              <b>Samantha L.</b>
+              <span>Mazda CX-5 Owner &middot; Sunnybank Hills</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">“Honest, upfront, and dependable. They always show you the old parts they replaced and give straight advice on what can wait and what needs immediate attention.”</p>
+          </div>
+          <div class="reviewer">
+            <div class="reviewer-avatar">BK</div>
+            <div class="reviewer-info">
+              <b>Brendan K.</b>
+              <span>Ford Ranger Fleet &middot; Rochedale</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours -->
+  <section id="location" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="info-card">
+        <div class="info-col">
+          <h3>📍 Location &amp; Contact</h3>
+          <p style="color: var(--text-muted); margin-bottom: 16px;">
+            Located on Logan Road in Eight Mile Plains, servicing Eight Mile Plains, Sunnybank, Upper Mount Gravatt, Rochedale, Underwood, and Springwood.
+          </p>
+          <p style="margin-bottom: 10px;"><strong>Address:</strong> Logan Road, Eight Mile Plains QLD 4113</p>
+          <p style="margin-bottom: 20px;"><strong>Email:</strong> <a href="mailto:brisbaneautoshop134@gmail.com" style="color:var(--pri); font-weight:700; text-decoration:none;">brisbaneautoshop134@gmail.com</a></p>
+          <a class="btn btn-sec" href="https://maps.google.com/?q=Logan+Road+Eight+Mile+Plains+QLD+4113" target="_blank" rel="noopener">🗺 Open in Google Maps</a>
+        </div>
+
+        <div class="info-col">
+          <h3>🕒 Workshop Hours</h3>
+          <table class="hours-table">
+            <tr><td>Monday</td><td>7:30 AM – 5:30 PM</td></tr>
+            <tr><td>Tuesday</td><td>7:30 AM – 5:30 PM</td></tr>
+            <tr><td>Wednesday</td><td>7:30 AM – 5:30 PM</td></tr>
+            <tr><td>Thursday</td><td>7:30 AM – 5:30 PM</td></tr>
+            <tr><td>Friday</td><td>7:30 AM – 5:30 PM</td></tr>
+            <tr><td>Saturday</td><td>8:00 AM – 1:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Helpful Answers</div>
+        <h2 class="sec-title">Frequently Asked Questions</h2>
+        <p class="sec-desc">Common questions regarding car servicing and repairs at Brisbane Autoshop.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-btn">
+            <span>Will servicing my vehicle with you void my new car warranty?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            No. Under Australian Consumer Law, you have the right to choose your mechanic for logbook servicing. We follow manufacturer service schedules and use genuine/OEM approved parts so your statutory warranty remains 100% intact.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>How fast can I get a quote by email?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            We review quote requests regularly during workshop hours. Send your vehicle registration or make/model/year and service required to <a href="mailto:brisbaneautoshop134@gmail.com">brisbaneautoshop134@gmail.com</a> and we typically reply promptly with an itemised estimate.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>Do you service diesel 4WDs and commercial utes?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            Yes! Diesel common rail diagnostics, DPF regeneration/servicing, fuel filter changes, heavy-duty suspension, and turbo inspections are a core specialty of our workshop.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>How long will my service take?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            Standard minor logbook services take approximately 2 to 3 hours. Major services or diagnostic repair jobs can take half a day. Drop off in the morning from 7:30 AM and we will notify you as soon as your car is ready for collection.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section style="padding-top: 0;">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Need Quality Car Repairs or a Logbook Service?</h2>
+        <p>Email our workshop team today with your vehicle details for a fast, honest, and competitive quote.</p>
+        <div class="cta-btns">
+          <a class="btn btn-white" href="mailto:brisbaneautoshop134@gmail.com">✉️ Email brisbaneautoshop134@gmail.com</a>
+          <button class="btn btn-ghost open-modal-btn">⚡️ Request Online Quote</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-wrap">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
+          <div>
+            <strong>Brisbane Autoshop</strong> &middot; Logan Road, Eight Mile Plains QLD 4113
+          </div>
+          <div>
+            Email: <a href="mailto:brisbaneautoshop134@gmail.com" style="color:var(--pri); font-weight:700; text-decoration:none;">brisbaneautoshop134@gmail.com</a>
+          </div>
+        </div>
+        <div class="notice">
+          🛠 <b>Concept Preview Notice:</b> This website is an unaffiliated demonstration concept designed for Brisbane Autoshop by <a href="https://apprerum.com" target="_blank" rel="noopener">AppRerum</a>. Business details are drawn from public business listings. <a href="../../index.html">← Back to All Previews</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA Bar -->
+  <div class="mobile-bar">
+    <div class="mobile-bar-inner">
+      <a class="btn btn-sec" href="mailto:brisbaneautoshop134@gmail.com">✉️ Email Us</a>
+      <button class="btn btn-pri open-modal-btn">⚡️ Request Quote</button>
+    </div>
   </div>
-</div></section>
 
-<section style="padding-top:0"><div class="wrap">
-  <div class="about-band">
-    <div class="stat"><b>Local</b><span>Proudly serving Eight Mile Plains (Brisbane) and surrounds</span></div>
-    <div class="stat"><b>Mechanic &amp; Auto Repairs</b><span>Serving Eight Mile Plains (Brisbane) with reliable, friendly service</span></div>
-    <div class="stat"><b>Contact</b><span>Email us — we reply fast, no obligation</span></div>
+  <!-- Interactive Booking / Quote Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <div id="formContainer">
+        <h3>Request an Auto Service Quote</h3>
+        <p>Enter your vehicle details below and we’ll reply with a fast, transparent estimate.</p>
+        <form id="appointmentForm">
+          <div class="form-group">
+            <label for="clientName">Your Full Name *</label>
+            <input type="text" id="clientName" class="form-control" placeholder="e.g. Jason Miller" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="clientEmail">Email Address *</label>
+              <input type="email" id="clientEmail" class="form-control" placeholder="jason@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="clientPhone">Phone / Mobile</label>
+              <input type="tel" id="clientPhone" class="form-control" placeholder="0400 000 000">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="carMakeModel">Car Make &amp; Model *</label>
+              <input type="text" id="carMakeModel" class="form-control" placeholder="e.g. 2019 Toyota Hilux" required>
+            </div>
+            <div class="form-group">
+              <label for="regoNumber">Rego / Odometer (Optional)</label>
+              <input type="text" id="regoNumber" class="form-control" placeholder="e.g. 123-ABC / 85,000km">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="serviceSelect">Service Required</label>
+            <select id="serviceSelect" class="form-control">
+              <option value="Logbook Servicing">Logbook Servicing</option>
+              <option value="4WD & SUV Specialist Care">4WD &amp; SUV Specialist Care</option>
+              <option value="Computer Diagnostics & Electrical">Computer Diagnostics &amp; Electrical</option>
+              <option value="Brake & Clutch Repairs">Brake &amp; Clutch Repairs</option>
+              <option value="Suspension & Steering">Suspension &amp; Steering</option>
+              <option value="Roadworthy & Pre-Purchase">Roadworthy &amp; Pre-Purchase Inspection</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="userNotes">Additional Notes / Symptoms</label>
+            <input type="text" id="userNotes" class="form-control" placeholder="e.g. squeaking brakes, check engine light on">
+          </div>
+          <button type="submit" class="btn btn-pri" style="width: 100%; margin-top: 8px;">Submit Quote Request</button>
+        </form>
+      </div>
+
+      <div class="form-success" id="formSuccess">
+        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <h3>Quote Request Sent!</h3>
+        <p>Thank you! Our mechanical team has received your vehicle details and will reply with a detailed quote to your email shortly.</p>
+        <button class="btn btn-pri" id="successDoneBtn" style="margin-top: 14px;">Done</button>
+      </div>
+    </div>
   </div>
-</div></section>
 
-<section id="contact" style="padding-top:0"><div class="wrap">
-  <div class="contact-band">
-    <h2 class="sec">Get in touch</h2>
-    <p class="muted">The fastest way to reach Brisbane Autoshop is by email — we reply fast.</p>
-    <a class="contact-big" href="mailto:brisbaneautoshop134@gmail.com">brisbaneautoshop134@gmail.com</a><br>
-    <p class="muted" style="margin-top:10px">✉️ <a href="mailto:brisbaneautoshop134@gmail.com" style="color:#fff">brisbaneautoshop134@gmail.com</a></p>
-  </div>
-</div></section>
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        item.classList.toggle('active');
+      });
+    });
 
-<footer><div class="wrap">
-  © 2026 Brisbane Autoshop. All rights reserved.
-  <div style="font-size:.72rem;color:#94a3b8;margin-top:6px">Hero photo · unknown · CC0 · via Openverse</div>
-  <div class="notice">🛠 <b>Concept preview:</b> this page is an unaffiliated demonstration website designed as a free concept for Brisbane Autoshop by <a href="https://apprerum.com" rel="noopener">AppRerum (apprerum.com)</a>. Business details shown are drawn from public listings. Not the official Brisbane Autoshop website.</div>
-</div></footer>
-<!-- Built by AppRerum · apprerum.com · concept preview -->
+    // Booking Modal
+    const modal = document.getElementById('bookingModal');
+    const closeModal = document.getElementById('closeModal');
+    const openModalBtns = document.querySelectorAll('.open-modal-btn');
+    const serviceSelect = document.getElementById('serviceSelect');
+    const appointmentForm = document.getElementById('appointmentForm');
+    const formContainer = document.getElementById('formContainer');
+    const formSuccess = document.getElementById('formSuccess');
+    const successDoneBtn = document.getElementById('successDoneBtn');
+
+    openModalBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const service = btn.getAttribute('data-service');
+        if (service && serviceSelect) {
+          serviceSelect.value = service;
+        }
+        formContainer.style.display = 'block';
+        formSuccess.style.display = 'none';
+        modal.classList.add('active');
+      });
+    });
+
+    function hideModal() {
+      modal.classList.remove('active');
+    }
+
+    closeModal.addEventListener('click', hideModal);
+    successDoneBtn.addEventListener('click', hideModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) hideModal();
+    });
+
+    appointmentForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formContainer.style.display = 'none';
+      formSuccess.style.display = 'block';
+    });
+  </script>
+
 </body>
 </html>

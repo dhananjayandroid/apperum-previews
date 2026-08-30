@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stylin' Dogs — pet_groomer in Belmont (Geelong)</title>
+<meta name="description" content="Stylin' Dogs: Stylin' Dogs is a trusted local pet_groomer business. Call 0433 378 329 or visit us in Belmont (Geelong).">
+<style>
+:root { --pri:#7c3aed; --dark:#4c1d95; --acc:#10b981; --tint:#f5f3ff; }
+* { box-sizing:border-box; margin:0; padding:0 }
+html { scroll-behavior:smooth }
+body { font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; color:#1f2937; line-height:1.6; background:#fff }
+.wrap { max-width:1060px; margin:0 auto; padding:0 22px }
+nav { position:sticky; top:0; background:#ffffffee; backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; z-index:50 }
+nav .wrap { display:flex; align-items:center; gap:14px; padding:14px 22px }
+.brand { display:flex; align-items:center; gap:12px; font-weight:700; color:var(--dark); font-size:1.06rem; text-decoration:none }
+.logo { width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg,var(--pri),var(--acc)); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; letter-spacing:.5px }
+nav .spacer { flex:1 }
+.btn { display:inline-block; padding:11px 20px; border-radius:10px; font-weight:700; text-decoration:none; transition:.18s }
+.btn-call { background:var(--pri); color:#fff } .btn-call:hover { background:var(--dark) }
+.btn-mail { border:2px solid var(--pri); color:var(--pri) } .btn-mail:hover { background:var(--pri); color:#fff }
+header.hero { position:relative; color:#fff; padding:110px 0 118px; background:var(--dark) }
+.hero-img { position:absolute; inset:0; background-size:cover; background-position:center; opacity:.92 }
+.hero-ol { position:absolute; inset:0; background:linear-gradient(100deg, rgba(8,12,24,.88) 0%, rgba(8,12,24,.62) 46%, rgba(8,12,24,.18) 100%) }
+.hero .wrap { position:relative; z-index:2 }
+.hero .loc-chip { display:inline-flex; gap:8px; align-items:center; background:#ffffff26; border:1px solid #ffffff44; padding:6px 14px; border-radius:999px; font-size:.88rem; margin-bottom:20px }
+.hero h1 { font-size:clamp(1.9rem,4.4vw,3.1rem); line-height:1.15; letter-spacing:-.02em; margin-bottom:14px }
+.hero p.sub { font-size:1.13rem; color:#ffffffdd; max-width:640px; margin-bottom:30px }
+.hero .ctas { display:flex; gap:12px; flex-wrap:wrap }
+.btn-hero { background:#fff; color:var(--dark) } .btn-hero:hover { transform:translateY(-2px) }
+.btn-ghost { border:2px solid #ffffffaa; color:#fff } .btn-ghost:hover { background:#ffffff1c }
+section { padding:64px 0 }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px }
+.card { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:24px; transition:.18s }
+.card:hover { box-shadow:0 10px 28px #00000014; transform:translateY(-3px); border-color:var(--pri) }
+.card .ic { font-size:1.7rem; margin-bottom:10px }
+.card h3 { color:var(--dark); margin-bottom:6px; font-size:1.04rem }
+.card p { color:#4b5563; font-size:.94rem }
+.kicker { color:var(--pri); font-weight:800; text-transform:uppercase; letter-spacing:.14em; font-size:.78rem; margin-bottom:10px }
+h2.sec { font-size:clamp(1.45rem,2.6vw,2rem); color:var(--dark); letter-spacing:-.01em; margin-bottom:14px }
+.about-band { background:var(--tint); border-radius:18px; padding:38px; display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+.stat b { font-size:1.5rem; color:var(--pri); display:block }
+.stat span { color:#374151; font-size:.92rem }
+.contact-band { background:var(--dark); color:#fff; border-radius:18px; padding:44px; text-align:center }
+.contact-band h2 { color:#fff }
+.contact-big { font-size:clamp(1.35rem,3vw,2rem); font-weight:800; color:#fff; text-decoration:none; display:inline-block; margin:12px 0 4px }
+.contact-big:hover { color:var(--acc) }
+.muted { color:#d1d5db; font-size:.95rem }
+footer { padding:36px 0 46px; color:#6b7280; font-size:.85rem }
+footer a { color:var(--pri); text-decoration:none }
+.notice { margin-top:18px; padding:14px 16px; border:1px dashed #cbd5e1; border-radius:10px; background:#f8fafc; color:#475569; font-size:.82rem }
+@media(max-width:640px) { header.hero { padding:60px 0 66px } section { padding:46px 0 } .contact-band { padding:30px 20px } }
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="logo">SD</span> Stylin' Dogs</a>
+  <span class="spacer"></span>
+  <a class="btn btn-call" href="tel:0433378329">Call 0433 378 329</a>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="hero-img" style="background-image:url('hero.jpg')"></div>
+  <div class="hero-ol"></div>
+  <div class="wrap">
+  <span class="loc-chip">📍 Belmont (Geelong), VIC</span>
+  <h1>Stylin' Dogs</h1>
+  <p class="sub">Stylin' Dogs is a trusted local pet_groomer business.</p>
+  <div class="ctas">
+    <a class="btn btn-hero" href="tel:0433378329">📞 Call 0433 378 329</a> <a class="btn btn-ghost" href="mailto:Info@stylindogs.com.au">✉️ Email us</a>
+  </div>
+</div>
+</header>
+
+<section id="services"><div class="wrap">
+  <div class="kicker">What we do</div>
+  <h2 class="sec">Services</h2>
+  <p style="color:#4b5563;margin-bottom:26px;max-width:640px">From first call to finished job, Stylin' Dogs keeps it simple: quality work, honest advice and service locals recommend.</p>
+  <div class="grid">
+    <div class="card"><div class="ic">⭐</div><h3>Quality Service</h3><p>Every job done with care, attention to detail and pride.</p></div><div class="card"><div class="ic">💬</div><h3>Easy Communication</h3><p>Real people, straight answers — call and talk directly to us.</p></div><div class="card"><div class="ic">📍</div><h3>Truly Local</h3><p>Based right here in your area, so we're close by when you need us.</p></div><div class="card"><div class="ic">🤝</div><h3>Fair, Honest Pricing</h3><p>Clear quotes up front. No surprises, no hidden costs.</p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="about-band">
+    <div class="stat"><b>Local</b><span>Proudly serving Belmont (Geelong) and surrounds</span></div>
+    <div class="stat"><b>Pet_Groomer</b><span>Serving Belmont (Geelong) with reliable, friendly service</span></div>
+    <div class="stat"><b>Contact</b><span>Call 0433 378 329 — we're happy to chat, no obligation</span></div>
+  </div>
+</div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap">
+  <div class="contact-band">
+    <h2 class="sec">Get in touch</h2>
+    <p class="muted">Fastest way to reach Stylin' Dogs is a quick call.</p>
+    <a class="contact-big" href="tel:0433378329">0433 378 329</a><br>
+    <p class="muted" style="margin-top:10px">✉️ <a href="mailto:Info@stylindogs.com.au" style="color:#fff">Info@stylindogs.com.au</a></p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  © 2026 Stylin' Dogs. All rights reserved.
+  <div style="font-size:.72rem;color:#94a3b8;margin-top:6px">Hero photo · Matt Bango · CC0 · via Openverse</div>
+  <div class="notice">🛠 <b>Concept preview:</b> this page is an unaffiliated demonstration website designed as a free concept for Stylin' Dogs by <a href="https://apprerum.com" rel="noopener">AppRerum (apprerum.com)</a>. Business details shown are drawn from public listings. Not the official Stylin' Dogs website.</div>
+</div></footer>
+<!-- Built by AppRerum · apprerum.com · concept preview -->
+</body>
+</html>
